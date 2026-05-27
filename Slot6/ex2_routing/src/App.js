@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import PostList from './pages/PostList';
 import PostDetail from './pages/PostDetail';
 import About from './pages/About';
+import RegistrationForm from './components/RegistrationForm';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/posts' element={<PostList />} />
         <Route path='/posts/:id' element={<PostDetail />} />
         <Route path='/about' element={<About />} />
+        <Route path='/register' element={<RegistrationForm />} />
         {/* Dấu * có nghĩa là nếu gõ sai bất kỳ URL nào khác, nó sẽ đá về trang 404 */}
         <Route path='*' element={<NotFound />} />
       </Routes>
